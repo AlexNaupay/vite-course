@@ -26,7 +26,13 @@ export default defineConfig(({command, mode})=> {
                         main: path.resolve(__dirname, 'index.html'),
                         help: path.resolve(__dirname, 'help', 'help.html')
                     }
-                }
+                },
+                // Libraries
+                /*lib: {
+                    entry: path.resolve(__dirname, 'lib', 'main.js'),
+                    name: 'my-lib',
+                    fileName: (format) => `my-lib.${format}.js`
+                }*/
             }
         }
     }
